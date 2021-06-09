@@ -50,8 +50,15 @@ const deleteNote = (id) =>
         },
     });
 
+// event handler for note to display . .. 
 const renderActiveNote = () => {
-    hide(saveNoteBtn);
+	hide(saveNoteBtn);
+	
+
+	console.log(`active note clicked . . .`);
+	console.log(`${activeNote.id}`);
+	console.log(`${activeNote.text}`);
+
 
     if (activeNote.id) {
         noteTitle.setAttribute('readonly', true);
@@ -59,6 +66,8 @@ const renderActiveNote = () => {
         noteTitle.value = activeNote.title;
         noteText.value = activeNote.text;
     } else {
+		noteTitle.removeAttribute('readonly');
+        noteText.removeAttribute('readonly');
         noteTitle.value = '';
         noteText.value = '';
     }
@@ -90,7 +99,12 @@ const handleNoteDelete = (e) => {
     deleteNote(noteId).then(() => {
         getAndRenderNotes();
         renderActiveNote();
-    });
+	});
+	
+
+	console.log(`delete note clicked . . . ${noteId}`)
+
+
 };
 
 // Sets the activeNote and displays it
@@ -178,6 +192,3 @@ if (window.location.pathname === '/notes') {
 }
 
 getAndRenderNotes();
-
-
-console.log('hello from this shithole index.js');
