@@ -67,8 +67,30 @@ app.get(`/api/notes/:note`, (req, res) => {
 
 
 app.delete('/api/notes/:id', (req, res) => {
-	res.send("delete requested")
+	res.send("delete requested");
 
+	console.log('delete requested form inside the route');
+
+
+	const chosen = req.params.id;
+	console.log(chosen);
+
+	console.log(notesData)
+
+	// get's the index of the chosen note
+	let deleteThis = notesData.findIndex(function (note) {
+		return note.id === chosen;
+	});
+
+	console.log(deleteThis);
+
+	// attempting to splice chosen outta here
+	let newData = notesData.splice(`${deleteThis}`, 1);
+
+	console.log(newData)
+	console.log(notesData)
+
+	fs.writeFileSync('../db/db.json', JSON.stringify(notesData));
 
 });
 
