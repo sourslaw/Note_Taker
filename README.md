@@ -17,12 +17,15 @@
 
 ### Installation
 - The project is uploaded to [GitHub](https://github.com/) at the following repository: [here](https://github.com/sourslaw/Note_Taker)
+- The project is deployed via [Heroku](https://www.heroku.com/): [here](https://floating-scrubland-33204.herokuapp.com/)
 
 ### Usage
 ![alt text](assets/images/screenshot_usage.gif)
 
 ### Credits
-
+- [Express](https://expressjs.com/)
+- [Heroku](https://www.heroku.com/)
+- [Node](https://nodejs.org/en/)
 
 ### License
 - Licensed under the [MIT](https://opensource.org/licenses/mit-license.php) license.
