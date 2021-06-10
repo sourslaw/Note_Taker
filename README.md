@@ -2,7 +2,7 @@
 ![alt text](assets/images/screenshot.png)
 
 ## Description
-- A note taking application . . .
+- A simple note taking application which allows the user to crate, read, and delete notes
 
 ### The User Story for this project is as follows:
 - AS A small business owner, I WANT to be able to write and save notes, SO THAT I can organize my thoughts and keep track of tasks I need to complete
@@ -17,7 +17,7 @@
 
 ### Installation
 - The project is uploaded to [GitHub](https://github.com/) at the following repository: [here](https://github.com/sourslaw/Note_Taker)
-- The project is deployed via [Heroku](https://www.heroku.com/): [here](https://floating-scrubland-33204.herokuapp.com/)
+- The project is deployed via [Heroku](https://www.heroku.com/) at the following link: [here](https://floating-scrubland-33204.herokuapp.com/)
 
 ### Usage
 ![alt text](assets/images/screenshot_usage.gif)
