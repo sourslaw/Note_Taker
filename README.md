@@ -2,7 +2,7 @@
 ![alt text](assets/images/screenshot.png)
 
 ## Description
-- A simple note taking application which allows the user to crate, read, and delete notes
+- A simple note taking application which allows the user to create, read, and delete notes
 
 ### The User Story for this project is as follows:
 - AS A small business owner, I WANT to be able to write and save notes, SO THAT I can organize my thoughts and keep track of tasks I need to complete
